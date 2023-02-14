@@ -1,3 +1,12 @@
+$color-primary: #000000;
+
+$color-primary-tinted: mix(white, $color-primary, 13%);
+$color-primary-shaded: mix(black, $color-primary, 10%);
+
 p{
-    background-color: #fff;
+    color: $color-primary-tinted;
+}
+
+li{
+    color: $color-primary-shaded;
 }
