@@ -524,8 +524,7 @@ footer {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .modal__link {
-  display: inline-flex;
-  margin-bottom: 30px;
+  display: inline-block;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
@@ -569,6 +568,12 @@ footer {
   text-align: center;
   letter-spacing: 0.03em;
 }
+.contacts-form__checkbox-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
 .contacts-form__checkbox-label {
   display: inline-flex;
 }
@@ -583,7 +588,8 @@ footer {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .contacts-form__checkbox {
-  display: inline-flex;
+  display: inline-block;
+  justify-content: center;
   transition-property: box-shadow, background-color, border-color,color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -596,7 +602,7 @@ footer {
   background-origin: border-box;
 }
 .contacts-form__text {
-  display: inline-flex;
+  display: inline-block;
   margin-left: 7px;
   font-weight: 400;
   font-size: 14px;

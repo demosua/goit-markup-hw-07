@@ -16,8 +16,7 @@
     }
     
     &__link {
-        display: inline-flex;
-        margin-bottom: 30px;
+        display: inline-block;
         font-weight: 400;
         font-size: 14px;
         line-height: 1.7;
@@ -64,6 +63,11 @@
         letter-spacing: 0.03em;
     }
 
+    &__checkbox-wrapper{
+        @include flexCentered;
+        margin-bottom: 30px;
+    }
+
     &__checkbox-label {
         display: inline-flex;
     }
@@ -81,7 +85,8 @@
     }
 
     &__checkbox {
-        display: inline-flex;
+        display: inline-block;
+        justify-content: center;
         @include setTransition('box-shadow, background-color, border-color,color');
 
         background-color: getColor('background-primary');
@@ -93,7 +98,7 @@
     }
 
     &__text {
-        display: inline-flex;
+        display: inline-block;
         margin-left: 7px;
         font-weight: 400;
         font-size: 14px;
