@@ -16,5 +16,9 @@
         ".vscode/**"
     ],
     "liveSassCompile.settings.generateMap": true,
-    "liveSassCompile.settings.autoprefix": ["defaults"]
+    "liveSassCompile.settings.autoprefix": [
+        "defaults"
+    ],
+    "ecsstractor_port.bem_nesting": true,
+    "ecsstractor_port.modifier_separator": "--"
 }
