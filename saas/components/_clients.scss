@@ -1,0 +1,28 @@
+.clients {
+    display: flex;
+    flex-wrap: wrap;
+
+    &__item {
+        @extend %list;
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+    }
+
+    &__link{
+        @include flexCentered;
+        @include setTransition('border-color, color');
+        width: 170px;
+        height: 92px;
+        
+        color: getColor('icons');
+        border-radius: 4px;
+        border: 1px solid getColor('icons');
+        
+        &:hover,
+        &:focus {
+            border-color: getColor('accent');
+            color: getColor('accent');
+        }
+    }
+}

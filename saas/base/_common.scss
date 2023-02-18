@@ -1,0 +1,40 @@
+body {
+    background-color: getColor('background-primary');
+    color: getColor('text-primary');
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.02em;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.icon {
+    fill: currentColor;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    padding: 0;
+    margin: 0;
+}
+
+ol,
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}

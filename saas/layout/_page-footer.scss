@@ -1,0 +1,19 @@
+footer {
+    background: getColor('background-footer');
+}
+
+.footer-wrapper {
+    display: flex;
+    align-items: baseline;
+
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &__address {
+        margin-top: 20px;
+    }
+
+    &__join-us {
+        margin-left: 70px;
+    }
+}

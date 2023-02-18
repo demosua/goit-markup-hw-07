@@ -1,0 +1,54 @@
+.header-wrapper {
+    @include flexCentered;
+}
+
+.navigation {
+    @include flexCentered;
+    &__list {
+        @extend %list;
+        display: inline-flex;
+    }
+
+    &__item:not(:last-child) {
+        margin-right: 50px;
+    }
+
+    &__link {
+        @include setTransition('color');
+        @extend %link;
+        position: relative;
+        display: block;
+        padding-top: 32px;
+        padding-bottom: 32px;
+    
+        font-weight: 500;
+        font-size: 14px;
+        text-decoration: none;
+    
+        line-height: 1.14;
+        color: getColor('text-primary');
+
+    &:hover,
+    &:focus {
+        color: getColor('accent');
+    }
+
+    &--current::after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 4px;
+    
+        background-color: getColor('accent');
+        border-radius: 2px;
+    }
+    }
+
+    .header-wrapper &{
+        margin-left: 93px;
+    }
+}
+

@@ -1,0 +1,16 @@
+.join-us {
+
+    &__title {
+            display: inline-flex;
+            flex-wrap: wrap;
+
+            margin-bottom: 20px;
+            font-weight: 700;
+            font-size: 14px;
+        
+            line-height: 1.14;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            color: getColor('background-primary');
+    }
+}

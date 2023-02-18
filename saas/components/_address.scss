@@ -1,0 +1,23 @@
+.address {
+    &__item {
+        @extend %list;
+    }
+
+    &__link {
+        @include setTransition('color');
+        @extend %link;
+        font-size: 14px;
+        line-height: 1.7;
+        font-style: normal;
+        color: rgba(getColor('background-primary'), 0.6);
+
+        &--geo {
+            color: getColor('background-primary');
+        }
+
+        &:hover,
+        &:focus {
+            color: getColor('accent');
+        }
+    }
+}
