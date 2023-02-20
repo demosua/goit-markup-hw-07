@@ -1,18 +1,14 @@
 .contacts {
     @extend %list;
-    @extend %link;
+
     display: flex;
     margin-left: auto;
 
     &__link {
         @include setTransition('color');
         @include flexCentered;
-        margin-right: 10px;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.14;
-        text-decoration: none;
-        color: getColor('text-secondary');
+        @include font(14px, 500, 16px, 0.02em, text-secondary);
+        @extend %link;
         }
 
     &__link:hover,

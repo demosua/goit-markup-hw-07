@@ -2,15 +2,9 @@
     margin-left: auto;
 
     &__call {
+        @include font(14px, 700, 16px, 0.03em, background-primary, none, uppercase);
         display: block;
         margin-bottom: 20px;
-        font-weight: 700;
-        font-size: 14px;
-    
-        line-height: 1.14;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-        color: getColor('background-primary');
     }
 
     &__input {

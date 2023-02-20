@@ -4,17 +4,10 @@
     flex-wrap: wrap;
 
     &__title {
+        @include font(14px, 700, 16px, 0.03em, text-primary, none,
+            uppercase);
         margin-top: 0px;
         margin-bottom: 10px;
-
-        font-weight: 700;
-        font-size: 14px;
-        text-decoration: none;
-
-        line-height: 1.14;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-        color: getColor('text-primary');
     }
 
     &__item {
@@ -27,14 +20,9 @@
     }
 
     &__text {
+        @include font(14px, 400, 24px, 0.03em, text-secondary);
         margin-top: 0px;
         margin-bottom: 0px;
-    
-        font-size: 14px;
-        text-decoration: none;
-        line-height: 1.7;
-        letter-spacing: 0.03em;
-        color: getColor('text-secondary');
     }
 
     &__icon {

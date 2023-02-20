@@ -1,8 +1,9 @@
 body {
-    background-color: getColor('background-primary');
-    color: getColor('text-primary');
-    font-family: 'Roboto', sans-serif;
+    font-family: $studio-font-family;
+    
     letter-spacing: 0.02em;
+    color: getColor('text-primary');
+    background-color: getColor('background-primary');
 }
 
 .container {

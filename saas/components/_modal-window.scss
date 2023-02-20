@@ -7,7 +7,7 @@
     padding: 40px;
 
     border-radius: 4px;
-    background-color: getColor('background-primary');
+    background-color: getColor(background-primary);
 
     &:hover {
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -16,24 +16,19 @@
     }
     
     &__link {
+        @include font(14px, 400, 24px, 0.03em, accent, underline);
         display: inline-block;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 1.7;
-        letter-spacing: 0.03em;
-        color: getColor('accent');
-        text-decoration: underline;
         cursor: pointer;
     }
 
     &__button {
         @include flexCentered();
+        @include setTransition('box-shadow,color');
         position: absolute;
         right: 8px;
         top: 8px;
         width: 30px;
         height: 30px;
-    
         padding: 0;
         margin: 0;
     
@@ -42,9 +37,7 @@
         background-color: transparent;
         color: getColor('text-primary');
         cursor: pointer;
-    
-        @include setTransition('box-shadow,color');
-    
+
         &:hover {
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
             color: getColor('accent');
@@ -54,13 +47,11 @@
 
 .contacts-form {
     &__title {
+        @include font(20px, 700, 23px, 0.03em);
         display: block;
         margin-bottom: 12px;
-        font-weight: 700;
-        font-size: 20px;
-        line-height: 23px;
+
         text-align: center;
-        letter-spacing: 0.03em;
     }
 
     &__checkbox-wrapper{
@@ -98,13 +89,9 @@
     }
 
     &__text {
+        @include font(14px, 400, 24px, 0.03em, text-secondary);
         display: inline-block;
         margin-left: 7px;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 1.7;
-        letter-spacing: 0.03em;
-        color: getColor('text-secondary');
     }
 
     &__button {
@@ -124,13 +111,9 @@
 
 .form-label {
     &__name {
+        @include font(12px, 400, 14px, 0.01em, 'text-secondary');
         display: block;
         margin-bottom: 4px;
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 1.16;
-        letter-spacing: 0.01em;
-        color: getColor('text-secondary');
     }
 
     &__field {
@@ -173,11 +156,7 @@
         }
 
         ::placeholder {
-            font-weight: 400;
-            font-size: 12px;
-            line-height: 14px;
-            letter-spacing: 0.01em;
-
+            @include font(12px, 400, 14px, 0.01em);
             color: rgba(getColor('text-secondary'), 0.5)
         }
     }

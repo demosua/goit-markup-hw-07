@@ -24,22 +24,14 @@
     }
 
     &__name {
+        @include font(16px, 500, 19px, 0.03em, text-primary);
         margin-bottom: 10px;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.18;
         text-align: center;
-        letter-spacing: 0.03em;
-        color: getColor('text-primary');
     }
 
     &__post {
         margin-bottom: 16px;
-    
-        font-size: 16px;
-        line-height: 1.18;
+        @include font(16px, 500, 19px, 0.03em, text-secondary);
         text-align: center;
-        letter-spacing: 0.03em;
-        color: getColor('text-secondary');
     }
 }

@@ -1,12 +1,9 @@
 .logo {
     @extend %link;
     display: inline-flex;
-    font-family: 'Raleway';
-    font-size: 26px;
-    font-weight: 700;
 
-    line-height: 1.2;
-    letter-spacing: 0.03em;
+    font-family: $studio-font-family;
+    @include font(26px, 700, 31px, 0.03em);
 
     &__first-part {
         color: getColor('accent');
