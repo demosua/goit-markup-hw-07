@@ -31,7 +31,7 @@
 
     &__post {
         margin-bottom: 16px;
-        @include font(16px, 500, 19px, 0.03em, text-secondary);
+        @include font(16px, 400, 19px, 0.03em, text-secondary);
         text-align: center;
     }
 }
